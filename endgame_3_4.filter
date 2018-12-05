@@ -458,37 +458,6 @@ Show
     SetBorderColor 255 0 0 255 
     PlayAlertSound 4 300
 
-# SCARABS
-# LOW TIER
-Show
-    Class "Map Fragments"
-    #BaseType "Rusted Breach Scarab" "Rusted Cartography Scarab" "Rusted Reliquary Scarab" "Rusted Bestiary Scarab" "Rusted Shaper Scarab" "Rusted Elder Scarab" "Rusted Sulphite Scarab" "Rusted Divination Scarab" "Rusted Torment Scarab" "Rusted Ambush Scarab" "Rusted Harbinger Scarab" "Rusted Perandus Scarab"
-    SetFontSize 43
-    SetBackgroundColor 20 160 160
-    SetBorderColor 190 190 190
-    SetTextColor 190 190 190
-    PlayAlertSound 11 300
-
-# MEDIUM TIER
-Show
-    Class "Map Fragments"
-    #BaseType "Polished Breach Scarab" "Polished Cartography Scarab" "Polished Reliquary Scarab" "Polished Bestiary Scarab" "Polished Shaper Scarab" "Polished Elder Scarab" "Polished Sulphite Scarab" "Polished Divination Scarab" "Polished Torment Scarab" "Polished Ambush Scarab" "Polished Harbinger Scarab" "Polished Perandus Scarab"
-    SetFontSize 43
-    SetBackgroundColor 20 160 160
-    SetBorderColor 240 240 0
-    SetTextColor 240 240 0
-    PlayAlertSound 11 300
-
-# HIGH TIER
-Show
-    Class "Map Fragments"
-    #BaseType "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Reliquary Scarab" "Gilded Bestiary Scarab" "Gilded Shaper Scarab" "Gilded Elder Scarab" "Gilded Sulphite Scarab" "Gilded Divination Scarab" "Gilded Torment Scarab" "Gilded Ambush Scarab" "Gilded Harbinger Scarab" "Gilded Perandus Scarab"
-    SetFontSize 43
-    SetBackgroundColor 20 160 160
-    SetBorderColor 240 0 0
-    SetTextColor 240 0 0
-    PlayAlertSound 11 300
-
 # MAPAS
 Show
     Class "Misc Map Items"
