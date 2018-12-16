@@ -6,11 +6,30 @@
 ###########################################################################
 ###########################################################################
 
+# BUILD
+# HELMET
 #Show
-#    BaseType "Amber Amulet" "Vaal Regalia" "Titanium Spirit Shield"
-#    Rarity Normal
-#    SetBorderColor 0 240 190 240
-#    SetBackgroundColor 0 0 0 255
+#    BaseType "Hubris Circlet" "Mind Cage" "Solaris Circlet" "Necromancer Circlet"
+#    Rarity Rare
+#    SetBorderColor 190 0 0
+#    SetBackgroundColor 0 0 0
+#    SetTextColor 255 255 255
+
+# BODY
+#Show
+#    BaseType "Vaal Regalia"
+#    Rarity Rare
+#    SetBorderColor 190 0 0
+#    SetBackgroundColor 0 0 0
+#    SetTextColor 255 255 255
+
+# BOOTS
+#Show
+#    BaseType "Sorcerer Boots" "Arcanist Slippers" "Conjurer Boots"
+#    Rarity Rare
+#    SetBorderColor 190 0 0
+#    SetBackgroundColor 0 0 0
+#    SetTextColor 255 255 255
 
 ###########################################################################
 #
@@ -462,7 +481,7 @@ Show
 # LOW TIER
 Show
     Class "Map Fragments"
-    #BaseType "Rusted Breach Scarab" "Rusted Cartography Scarab" "Rusted Reliquary Scarab" "Rusted Bestiary Scarab" "Rusted Shaper Scarab" "Rusted Elder Scarab" "Rusted Sulphite Scarab" "Rusted Divination Scarab" "Rusted Torment Scarab" "Rusted Ambush Scarab" "Rusted Harbinger Scarab" "Rusted Perandus Scarab"
+    BaseType "Rusted Breach Scarab" "Rusted Cartography Scarab" "Rusted Reliquary Scarab" "Rusted Bestiary Scarab" "Rusted Shaper Scarab" "Rusted Elder Scarab" "Rusted Sulphite Scarab" "Rusted Divination Scarab" "Rusted Torment Scarab" "Rusted Ambush Scarab" "Rusted Harbinger Scarab" "Rusted Perandus Scarab"
     SetFontSize 43
     SetBackgroundColor 20 160 160
     SetBorderColor 190 190 190
