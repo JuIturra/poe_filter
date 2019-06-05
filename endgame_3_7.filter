@@ -6,22 +6,30 @@
 ###########################################################################
 ###########################################################################
 
-#Show
-#    BaseType "Amber Amulet" "Vaal Regalia" "Titanium Spirit Shield"
-#    Rarity Normal
-#    SetBorderColor 0 240 190 240
-#    SetBackgroundColor 0 0 0 255
-
+# BUILD
+# HELMET
 Show
-    Class Gem
+    BaseType "Hubris Circlet" "Mind Cage" "Solaris Circlet" "Necromancer Circlet"
+    Rarity Rare
+    SetBorderColor 190 0 0
+    SetBackgroundColor 0 0 0
+    SetTextColor 255 255 255
 
+# BODY
 Show
-    Class Flask
+    BaseType "Vaal Regalia"
+    Rarity Rare
+    SetBorderColor 190 0 0
+    SetBackgroundColor 0 0 0
+    SetTextColor 255 255 255
 
+# BOOTS
 Show
-    LinkedSockets >= 3
-    SetFontSize 25
-    SetBorderColor 240 0 0
+    BaseType "Sorcerer Boots" "Arcanist Slippers" "Conjurer Boots"
+    Rarity Rare
+    SetBorderColor 190 0 0
+    SetBackgroundColor 0 0 0
+    SetTextColor 255 255 255
 
 ###########################################################################
 #
@@ -83,32 +91,37 @@ Show
 #   000 - Actual League Specifics
 #
 ###########################################################################
-
-# DELVE
+# Legion
 Show
-	Class Currency
-    BaseType "Fossil"
-	SetTextColor 0 0 0
-	SetBorderColor 199 199 0
-	SetBackgroundColor 255 255 0
-	SetFontSize 45
-	PlayAlertSound 9 200
-
-Show
-    Class "Delve Socketable Currency"
-	SetTextColor 255 255 255
-	SetBackgroundColor 0 0 170
-	SetBorderColor 0 0 0
-	SetFontSize 35
-	PlayAlertSound 1 200
-
-Show
-    BaseType "Ancient Reliquary Key" "Timeworn Reliquary Key"
-    SetTextColor 255 0 0
-    SetBorderColor 255 0 0
-    SetBackgroundColor 255 255 255
+    Class Currency
+    BaseType "Incubator"
+    SetTextColor 98 16 117 255
+    SetBorderColor 98 16 117 255
+    SetBackgroundColor 30 200 200 255
     SetFontSize 45
-    PlayAlertSound 6 200
+    PlayEffect White
+    MinimapIcon 0 White Star
+    PlayAlertSound 10 300
+
+Show
+    BaseType "Timeless Karui Emblem" "Timeless Maraketh Emblem" "Timeless Eternal Empire Emblem" "Timeless Templar Emblem" "Timeless Vaal Emblem"
+    SetTextColor 255 190 0
+    SetBorderColor 255 190 0
+    SetBackgroundColor 0 0 0 255
+    SetFontSize 45
+    PlayEffect Yellow
+    MinimapIcon 0 Yellow Star
+    PlayAlertSound 15 300
+
+Show
+    BaseType "Timeless Karui Splinter" "Timeless Maraketh Splinter" "Timeless Eternal Empire Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
+    SetTextColor 0 128 0 255
+    SetBorderColor 0 128 0 255
+    SetBackgroundColor 210 178 135 255
+    SetFontSize 30
+    PlayEffect Green
+    MinimapIcon 0 Green Triangle
+    PlayAlertSound 6 300
 
 ###########################################################################
 #
@@ -152,7 +165,7 @@ Show
 
 ###########################################################################
 #
-#   002 - Abyss items
+#   002 - ESPECIALES
 #
 ###########################################################################
 
@@ -174,7 +187,7 @@ Show
     SetFontSize 40
     PlayAlertSound 14 300
 
-# ELDER ITEMS
+# SHAPER ITEMS
 Show
     ShaperItem True
     SetBorderColor 0 128 255
@@ -192,6 +205,33 @@ Show
     SetFontSize 40
     PlayAlertSound 14 300
 
+# FRACTURED ITEMS
+Show
+	FracturedItem True
+    SetBorderColor 96 96 96 255
+    SetTextColor 96 96 96 255
+    SetBackgroundColor 30 200 200 255
+    SetFontSize 40
+    PlayAlertSound 14 300
+
+# SYNTHESIS ITEMS
+Show
+	SynthesisedItem True
+    SetBorderColor 245 255 0 255
+    SetTextColor 245 255 0 255
+    SetBackgroundColor 30 200 200 255
+    SetFontSize 35
+    PlayAlertSound 14 300
+
+# ENCANTADOS
+Show
+	AnyEnchantment True
+    SetBorderColor 245 255 255 255
+    SetTextColor 245 255 255 255
+    SetBackgroundColor 240 90 35 255
+    SetFontSize 35
+    PlayAlertSound 14 300
+
 ###########################################################################
 #
 #   002 - Items de liga
@@ -206,7 +246,27 @@ Show
     SetBackgroundColor 145 145 0
     SetTextColor 0 0 0
     SetFontSize 35
+    MinimapIcon 1 Brown Circle
     PlayAlertSound 6 200
+
+Show
+	Class Currency
+	BaseType "Blessing of Esh" "Blessing of Xoph" "Blessing of Uul-Netol" "Blessing of Tul" "Blessing of Chayula"
+	SetBorderColor 172 0 0
+	SetBackgroundColor 255 255 255
+	SetTextColor 172 0 0
+	SetFontSize 40
+	PlayAlertSound 13 200
+
+Show
+    BaseType "Master Cartographer's Sextant"
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    SetBackgroundColor 0 0 0
+    SetFontSize 45
+    CustomAlertSound "sounds/geovani_callate.mp3"
+    PlayEffect Red
+    MinimapIcon 2 Red Circle
 
 # Atlas of worlds
 Show
@@ -228,6 +288,14 @@ Show
     BaseType "Coin"
     SetTextColor 163 73 164
     SetBorderColor 163 73 164
+    SetFontSize 42
+
+Show
+	Class Currency
+    BaseType "Prophecy"
+    SetTextColor 163 73 164
+    SetBorderColor 163 73 164
+    SetBackgroundColor 255 255 255
     SetFontSize 42
 
 # Legacy league
@@ -287,6 +355,33 @@ Show
     SetFontSize 35
     PlayAlertSound 2 200
 
+# Delve
+Show
+    Class Currency
+    BaseType "Fossil"
+    SetTextColor 0 0 0
+    SetBorderColor 199 199 0
+    SetBackgroundColor 255 255 0
+    SetFontSize 45
+    PlayAlertSound 9 200
+
+Show
+    Class "Delve Socketable Currency"
+    SetTextColor 255 255 255
+    SetBackgroundColor 0 0 170
+    SetBorderColor 0 0 0
+    SetFontSize 35
+    PlayAlertSound 1 200
+
+# Legacy
+Show
+    BaseType "Ancient Reliquary Key" "Timeworn Reliquary Key"
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    SetBackgroundColor 255 255 255
+    SetFontSize 45
+    PlayAlertSound 6 200
+
 ###########################################################################
 #
 #   002 - CURRENCY
@@ -300,7 +395,7 @@ Show
     SetBorderColor 255 0 0
     SetBackgroundColor 0 0 0
     SetFontSize 45
-    CustomAlertSound "sounds/exalted.mp3"
+    CustomAlertSound "sounds/rene_exalted.mp3"
     PlayEffect Red
     MinimapIcon 2 Red Circle
 
@@ -325,7 +420,16 @@ Show
     MinimapIcon 2 Yellow Circle
 
 Show
-    BaseType "Gemcutter's Prism" "Regal Orb" "Orb of Alchemy" "Vaal Orb" "Orb of Fusing" "Orb of Scouring" "Blessed Orb" "Cartographer's Chisel" "Orb of Regret" "Glassblower's Bauble"
+    BaseType "Orb of Regret"
+    SetBorderColor 255 128 0
+    SetTextColor 255 128 0
+    SetFontSize 43
+    CustomAlertSound "sounds/shi_shenol.mp3"
+    PlayEffect Yellow
+    MinimapIcon 2 Yellow Circle
+
+Show
+    BaseType "Gemcutter's Prism" "Regal Orb" "Orb of Alchemy" "Orb of Fusing" "Orb of Scouring" "Blessed Orb" "Cartographer's Chisel" "Vaal Orb" "Glassblower's Bauble" "Chaos Shard" "Alchemy Shard" "Regal Shard"
     SetBorderColor 255 128 0
     SetTextColor 255 128 0
     SetFontSize 43
@@ -607,17 +711,23 @@ Show
 
 ###########################################################################
 #
-#   010 - FLASKS
+#   010 - NEEDS
 #
 ###########################################################################
 
 #Show
-#    BaseType Flask
+#   Class Flask
 
-# Crafteo
-Show
-    BaseType "Gemini Claw"
-    ElderItem True
-    SetFontSize 45
+#Show
+#   LinkedSockets 4
+
+#Show
+#    BaseType "Hubris Circlet" "Mind Cage" "Solaris Circlet" "Necromancer Circlet" "Sorcerer Boots" "Arcanist Slippers" "Conjurer Boots" "Vaal Regalia" "Widowsilk Robe" "Occultist's Vestment" "Necromancer Silks"
+#    Rarity <= Magic
+#    ItemLevel >= 68
+#    SetTextColor 50 130 165 255
+#    SetBorderColor 50 130 165 255
+#    SetBackgroundColor 255 255 255 255
+#    MinimapIcon 0 White Diamond
 
 Hide
