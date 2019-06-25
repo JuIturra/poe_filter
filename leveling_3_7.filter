@@ -104,7 +104,8 @@ Show
     PlayAlertSound 10 300
 
 Show
-    BaseType "Timeless Karui Emblem" "Timeless Maraketh Emblem" "Timeless Eternal Empire Emblem" "Timeless Templar Emblem" "Timeless Vaal Emblem"
+	Class "Map Fragments"
+    BaseType "Timeless Karui Emblem" "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Timeless Vaal Emblem"
     SetTextColor 255 190 0
     SetBorderColor 255 190 0
     SetBackgroundColor 0 0 0 255
@@ -114,8 +115,8 @@ Show
     PlayAlertSound 15 300
 
 Show
-    BaseType "Timeless Karui Splinter" "Timeless Maraketh Splinter" "Timeless Eternal Empire Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
-    SetTextColor 0 128 0 255
+    Class Currency
+	BaseType "Timeless Maraketh Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
     SetBorderColor 0 128 0 255
     SetBackgroundColor 210 178 135 255
     SetFontSize 30
@@ -720,9 +721,6 @@ Show
 
 Show
    LinkedSockets 4
-
-Show
-   LinkedSockets 3
 
 #Show
 #    BaseType "Hubris Circlet" "Mind Cage" "Solaris Circlet" "Necromancer Circlet" "Sorcerer Boots" "Arcanist Slippers" "Conjurer Boots" "Vaal Regalia" "Widowsilk Robe" "Occultist's Vestment" "Necromancer Silks"
