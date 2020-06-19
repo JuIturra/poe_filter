@@ -1,0 +1,961 @@
+###########################################################################
+###########################################################################
+#
+# MAMUSHKA 3.11
+#
+###########################################################################
+###########################################################################
+
+# MENU
+## Especificos de Liga
+## Currency
+## Item Especiales
+## Scarabs
+## Linked Sockets
+## Cards
+## Gems
+## Vendor Recipe
+## Atlas
+## Mapas
+## Items endgame
+## Laberinto
+## Faltantes
+## Leveo
+
+###########################################################################
+#
+#   Especificos de Liga
+#
+###########################################################################
+
+
+#------------------------------------
+#   Harvest 3.11.0
+#-----------------------------------
+Show
+	Class "Harvest Seed"
+	BaseType "Primal Cleaveling Seed" "Primal Dustspitter Seed" "Primal Feasting Horror Seed" "Primal Maw Seed" "Primal Rhoa Seed" "Vivid Arachnid Seed" "Vivid Leech Seed" "Vivid Scorpion Seed" "Vivid Thornweaver Seed" "Vivid Weta Seed" "Wild Ape Seed" "Wild Hatchling Seed" "Wild Hellion Seed" "Wild Thornwolf Seed" "Wild Ursaling Seed"
+	SetFontSize 45
+	SetTextColor 149 228 158 255            # TEXTCOLOR:	 High Special Base
+	SetBorderColor 149 228 158 255          # BORDERCOLOR:	 Neutral T1.5
+	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Currency T4
+	DisableDropSound True
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 Grey Raindrop
+
+Show
+	Class "Harvest Seed"
+	BaseType "Primal Chimeral Grain" "Primal Dustcrab Grain" "Primal Rhex Grain" "Primal Scrabbler Grain" "Primal Viper Grain" "Vivid Nestback Grain" "Vivid Parasite Grain" "Vivid Razorleg Grain" "Vivid Sapsucker Grain" "Vivid Striketail Grain" "Wild Bristlebeast Grain" "Wild Chieftain Grain" "Wild Homunculus Grain" "Wild Snap Hound Grain" "Wild Spikeback Grain"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0
+	SetBackgroundColor 149 228 158 255
+	DisableDropSound True
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Raindrop
+
+Show
+	Class "Harvest Seed"
+	BaseType "Primal Blisterlord Bulb" "Primal Crushclaw Bulb" "Primal Cystcaller Bulb" "Primal Reborn Bulb" "Primal Rhex Matriarch Bulb" "Vivid Abberarach Bulb" "Vivid Devourer Bulb" "Vivid Vulture Bulb" "Vivid Watcher Bulb" "Vivid Whipleg Bulb" "Wild Brambleback Bulb" "Wild Bristle Matron Bulb" "Wild Hellion Alpha Bulb" "Wild Infestation Queen Bulb" "Wild Thornmaw Bulb"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 49 234 70 255
+	DisableDropSound True
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Raindrop
+
+Show
+	Class "Harvest Seed"
+	BaseType "Primal Blisterfruit" "Vivid Scalefruit" "Wild Thornfruit"
+	SetFontSize 45
+	SetTextColor 20 80 10 255
+	SetBorderColor 20 80 10 255
+	SetBackgroundColor 255 255 255 255
+	DisableDropSound True
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Raindrop
+
+Show
+	Class "Harvest Seed"
+	SetFontSize 45
+	SetTextColor 255 0 255 255              # TEXTCOLOR:	 Update your filter
+	SetBorderColor 255 0 255 255            # BORDERCOLOR:	 Update your filter
+	SetBackgroundColor 100 0 100 255        # BACKGROUND:    Update your filter
+	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
+	PlayEffect Pink
+	MinimapIcon 1 Pink Circle
+
+#------------------------------------
+#   Delirium 3.10.0
+#-----------------------------------
+Show
+    Class Currency
+    BaseType "Simulacrum Splinter"
+    SetFontSize 45
+    SetTextColor 255 255 255
+    SetBorderColor 0 0 0 255
+    SetBackgroundColor 115 125 132 255
+    DisableDropSound True
+    PlayAlertSound 2 300
+    PlayEffect Orange
+    MinimapIcon 1 Orange Circle
+
+#------------------------------------
+#   Metamorph 3.9.0
+#-----------------------------------
+Show
+    Class Currency
+    BaseType "Catalyst"
+    SetTextColor 98 16 117 255
+    SetBorderColor 98 16 117 255
+    SetBackgroundColor 30 200 200 255
+    SetFontSize 45
+    PlayEffect White
+    MinimapIcon 0 White Star
+    PlayAlertSound 10 300
+
+#------------------------------------
+#   Blight 3.8.0
+#------------------------------------
+Show
+    BlightedMap True
+    MapTier >= 15
+    Class Maps
+    SetFontSize 45
+    SetTextColor 20 50 20 255
+    SetBorderColor 20 50 20 255
+    SetBackgroundColor 255 255 255 255
+    PlayAlertSound 6 300
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+
+Show
+    BlightedMap True
+    Class Maps
+    SetFontSize 45
+    SetTextColor 20 50 20 255
+    SetBorderColor 20 50 20 255
+    SetBackgroundColor 170 220 170
+    PlayAlertSound 1 300
+    PlayEffect Yellow
+    MinimapIcon 0 Yellow Star
+
+Show
+    Class Currency
+    BaseType "Oil"
+    SetFontSize 40
+    SetTextColor 218 104 15 255
+    SetBorderColor 240 94 35 255
+    SetBackgroundColor 239 184 16 255
+    PlayAlertSound 2 300
+    PlayEffect Yellow
+    MinimapIcon 2 Yellow Square
+
+#------------------------------------
+#   Legion 3.7.0
+#------------------------------------
+Show
+    Class Currency
+    BaseType "Incubator"
+    SetTextColor 98 16 117 255
+    SetBorderColor 98 16 117 255
+    SetBackgroundColor 30 200 200 255
+    SetFontSize 45
+    PlayEffect White
+    MinimapIcon 0 White Star
+    PlayAlertSound 10 300
+
+Show
+	Class "Map Fragments"
+    BaseType "Timeless Karui Emblem" "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Timeless Vaal Emblem"
+    SetTextColor 255 190 0
+    SetBorderColor 255 190 0
+    SetBackgroundColor 0 0 0 255
+    SetFontSize 45
+    PlayEffect Yellow
+    MinimapIcon 0 Yellow Star
+    PlayAlertSound 15 300
+
+Show
+    Class Currency
+	BaseType "Timeless Maraketh Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
+    SetBorderColor 0 128 0 255
+    SetBackgroundColor 210 178 135 255
+    SetFontSize 30
+    PlayEffect Green
+    MinimapIcon 0 Green Triangle
+    PlayAlertSound 6 300
+
+#------------------------------------
+#   Synthesis 3.6.0
+#------------------------------------
+Show
+	SynthesisedItem True
+    SetBorderColor 245 255 0 255
+    SetTextColor 245 255 0 255
+    SetBackgroundColor 30 200 200 255
+    SetFontSize 35
+    PlayAlertSound 14 300
+
+Show
+	FracturedItem True
+    SetBorderColor 96 96 96 255
+    SetTextColor 96 96 96 255
+    SetBackgroundColor 30 200 200 255
+    SetFontSize 40
+    PlayAlertSound 14 300
+
+#------------------------------------
+#   Betrayal 3.5.0
+#------------------------------------
+Show
+    Identified True
+    HasExplicitMod "Veil"
+    SetFontSize 32
+    SetBorderColor 189 155 22 255
+    SetBackgroundColor 0 0 0 255
+    SetTextColor 189 155 22 255
+    PlayEffect White Temp
+    MinimapIcon 2 White Diamond
+
+#------------------------------------
+#   Delve 3.4.0
+#------------------------------------
+Show
+    Class Currency
+    BaseType "Fossil"
+    SetTextColor 0 0 0
+    SetBorderColor 199 199 0
+    SetBackgroundColor 255 255 0
+    SetFontSize 45
+    PlayAlertSound 9 200
+
+Show
+    Class "Delve Stackable Socketable Currency"
+    BaseType "Prime Alchemical Resonator" "Prime Chaotic Resonator"
+    SetFontSize 45
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 240 90 35 255
+    DisableDropSound True
+    PlayAlertSound 1 300
+    PlayEffect Red
+    MinimapIcon 0 Red Hexagon
+
+Show
+    Class "Delve Stackable Socketable Currency"
+    BaseType "Potent Chaotic Resonator" "Powerful Chaotic Resonator" "Primitive Chaotic Resonator"
+    SetFontSize 45
+    SetTextColor 0 0 0 255
+    SetBorderColor 0 0 0
+    SetBackgroundColor 213 159 0 255
+    DisableDropSound True
+    PlayAlertSound 2 100
+    PlayEffect White
+    MinimapIcon 2 White Hexagon
+
+Show
+    Class "Delve Stackable Socketable Currency"
+    BaseType "Potent Alchemical Resonator" "Powerful Alchemical Resonator" "Primitive Alchemical Resonator"
+    SetFontSize 45
+    SetTextColor 0 0 0 255
+    SetBorderColor 0 0 0 200
+    SetBackgroundColor 210 178 135 255
+    DisableDropSound True
+    PlayAlertSound 2 100
+    PlayEffect White
+    MinimapIcon 2 White Hexagon
+
+#------------------------------------
+#   Incursion 3.3.0
+#------------------------------------
+Show
+    BaseType "Stone of Passage" "Flashpowder Keg" 
+    SetTextColor 140 255 66
+    SetBorderColor 140 255 66
+    PlayAlertSound 3 200
+    SetFontSize 45
+
+Show
+    BaseType "Vial of Dominance" "Vial of Summoning" "Vial of Awakening" "Vial of the Ritual" "Vial of Fate" "Vial of Consequence" "Vial of the Ghost" "Vial of Transcendence" "Vial of Sacrifice" 
+    SetTextColor 40 99 32
+    SetBorderColor 40 99 32
+    PlayAlertSound 1 200
+    SetFontSize 45
+
+Show
+    Class "Incursion Item"
+    SetFontSize 45
+    SetTextColor 74 230 58 255
+    SetBorderColor 74 230 58
+    SetBackgroundColor 0 0 0 255
+    PlayAlertSound 2 300
+    PlayEffect Green
+    MinimapIcon 1 Green Hexagon
+
+#------------------------------------
+#   Bestiary 3.2.0
+#------------------------------------
+
+#------------------------------------
+#   Abyss 3.1.0
+#------------------------------------
+Show
+    BaseType "Stygian Vise"
+    SetFontSize 35
+    SetTextColor 0 0 0
+    SetBorderColor 0 128 0
+    SetBackgroundColor 255 255 255
+    PlayAlertSound 3 88
+
+Show
+    Class "Abyss Jewel"
+    BaseType "Ghastly Eye Jewel" "Hypnotic Eye Jewel" "Murderous Eye Jewel" "Searching Eye Jewel"
+    Rarity Rare
+    SetFontSize 30
+    SetTextColor 255 255 70
+    SetBorderColor 0 128 0
+    SetBackgroundColor 0 128 64
+    PlayAlertSound 8 100
+
+Show
+    Class "Abyss Jewel"
+    BaseType "Ghastly Eye Jewel" "Hypnotic Eye Jewel" "Murderous Eye Jewel" "Searching Eye Jewel"
+    Rarity Magic
+    SetFontSize 30
+    SetTextColor 255 255 255
+    SetBorderColor 0 128 0
+    SetBackgroundColor 0 128 64
+    PlayAlertSound 8 100
+
+#------------------------------------
+#   Harbinger 3.0.0
+#------------------------------------
+Show
+    BaseType "Harbinger's Orb" "Engineer's Orb" "Ancient Orb" "Annulment Shard" "Binding Shard" "Harbinger's Shard" "Engineer's Shard" "Ancient Shard" "Orb of Annulment" "Orb of Binding"
+    SetTextColor 0 0 160
+    SetBorderColor 0 0 160
+    PlayAlertSound 8 100
+    SetFontSize 45
+
+Show
+	Class Piece
+	SetFontSize 45
+	SetTextColor 255 255 255 255
+	SetBorderColor 255 255 255 255
+	SetBackgroundColor 37 105 175 255
+	PlayAlertSound 1 300
+	PlayEffect Blue
+	MinimapIcon 0 Blue Star
+
+#------------------------------------
+#   Legacy 2.6.0
+#------------------------------------
+Show
+	Class "Misc Map Items"
+	BaseType "Ancient Reliquary Key" "Timeworn Reliquary Key"
+	SetFontSize 45
+	SetTextColor 255 0 0 255                # TEXTCOLOR:	 T0 Item
+	SetBorderColor 255 0 0 255              # BORDERCOLOR:	 T0 Item
+	SetBackgroundColor 255 255 255 255      # BACKGROUND:	 T0 Drop
+	PlayAlertSound 6 300                    # DROPSOUND:	 T0 Drop
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+#------------------------------------
+#   Breach 2.5.0
+#------------------------------------
+Show
+    Class Currency
+    BaseType "Splinter of Xoph" "Splinter of Uul-Netol" "Splinter of Tul" "Splinter of Esh" "Splinter of Chayula"
+    SetBorderColor 130 25 255 255
+    SetBackgroundColor 65 20 80
+    SetTextColor 239 184 16
+    SetFontSize 39
+    MinimapIcon 1 Brown Circle
+    PlayAlertSound 2 200
+
+Show
+    Class Rings
+    BaseType "Breach"
+    SetBorderColor 130 25 255 255
+    SetBackgroundColor 130 0 0
+    SetTextColor 244 147 242
+    SetFontSize 35
+    PlayAlertSound 2 200
+
+#------------------------------------
+#   Essence 2.4.0
+#------------------------------------
+Show
+    BaseType "Whispering Essence of" "Muttering Essence of" "Weeping Essence of" "Wailing Essence of" "Screaming Essence of" "Shrieking Essence of" "Essence of Hysteria" "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Deafening Essence of" "Remnant of Corruption"
+    SetBorderColor 255 255 160
+    SetTextColor 255 255 160
+    SetBackgroundColor 0 0 0
+    SetFontSize 45
+    PlayAlertSound 4 200
+
+#------------------------------------
+#   Prophecy 2.3.0
+#------------------------------------
+Show
+    BaseType "Coin"
+    SetTextColor 163 73 164
+    SetBorderColor 163 73 164
+    SetFontSize 42
+
+Show
+	Class Currency
+    BaseType "Prophecy"
+    SetTextColor 163 73 164
+    SetBorderColor 163 73 164
+    SetBackgroundColor 255 255 255
+    SetFontSize 42
+
+Show
+	Class "Map Fragments"
+	BaseType "Eber's Key" "Inya's Key" "Volkuur's Key" "Yriel's Key"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 159 15 213 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 1 Yellow Hexagon
+
+#------------------------------------
+#   Perandus 2.2.0
+#------------------------------------
+Show
+    BaseType "Perandus Coin"
+    SetBorderColor 255 128 0
+    SetTextColor 255 128 0
+    SetFontSize 38
+
+#------------------------------------
+#   Talisman 2.1.0
+#------------------------------------
+Show
+    BaseType "Talisman"
+    SetBackgroundColor 50 247 50
+    SetTextColor 255 255 255
+    SetFontSize 35
+    PlayAlertSound 2 200
+
+
+###########################################################################
+#
+#   Currency
+#
+###########################################################################
+# Currency alto
+Show
+    BaseType "Exalted Orb"
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    SetBackgroundColor 0 0 0
+    SetFontSize 45
+    CustomAlertSound "sounds/rene_exalted.mp3"
+    PlayEffect Red
+    MinimapIcon 2 Red Circle
+
+Show
+    BaseType "Eternal Orb" "Divine Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Stacked Deck"
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    SetBackgroundColor 0 0 0
+    SetFontSize 45
+    PlayAlertSound 5 200
+    PlayEffect Red
+    MinimapIcon 2 Red Circle
+
+# Currency medio
+Show
+    BaseType "Chaos Orb"
+    SetBorderColor 255 128 0
+    SetTextColor 255 128 0
+    SetFontSize 43
+    CustomAlertSound "sounds/mlg_horns.mp3"
+    PlayEffect Yellow
+    MinimapIcon 2 Yellow Circle
+
+Show
+    BaseType "Orb of Regret"
+    SetBorderColor 255 128 0
+    SetTextColor 255 128 0
+    SetFontSize 43
+    CustomAlertSound "sounds/shi_shenol.mp3"
+    PlayEffect Yellow
+    MinimapIcon 2 Yellow Circle
+
+Show
+    BaseType "Regal Orb"
+    SetBorderColor 255 128 0
+    SetTextColor 255 128 0
+    SetFontSize 43
+    CustomAlertSound "sounds/patrick_ctm.mp3"
+    PlayEffect Yellow
+    MinimapIcon 2 Yellow Triangle
+
+Show
+    BaseType "Gemcutter's Prism" "Orb of Alchemy" "Orb of Fusing" "Orb of Scouring" "Orb of Horizons" "Blessed Orb" "Cartographer's Chisel" "Vaal Orb" "Glassblower's Bauble" "Horizon Shard" "Chaos Shard" "Alchemy Shard" "Regal Shard"
+    SetBorderColor 255 128 0
+    SetTextColor 255 128 0
+    SetFontSize 43
+    PlayAlertSound 12 200
+    PlayEffect Yellow
+    MinimapIcon 2 Yellow Circle
+
+# Currency bajo
+Show
+    BaseType "Chromatic Orb" "Jeweller's Orb" "Orb of Alteration" "Orb of Augmentation" "Orb of Chance" "Orb of Transmutation"
+    SetBorderColor 185 122 87
+    SetTextColor 185 122 87
+    SetFontSize 40
+
+Show
+    Class "Labyrinth"
+    SetFontSize 45
+    SetTextColor 74 230 58
+    SetBorderColor 74 230 58
+    MinimapIcon 1 Green Hexagon
+    PlayEffect Green Temp
+
+# Harvest
+Show
+	BaseType "Deregulation Scroll" "Electroshock Scroll" "Fragmentation Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Time-light Scroll"
+	SetFontSize 45
+	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
+	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
+	SetBackgroundColor 37 105 175 255       # BACKGROUND:	 Piece
+	PlayAlertSound 1 300                    # DROPSOUND:	 T1 Dropsound
+	PlayEffect Blue
+	MinimapIcon 0 Blue Star
+
+
+###########################################################################
+#
+#   Items especiales
+#
+###########################################################################
+# Encantados con mod del laberinto
+Show
+	AnyEnchantment True
+    SetBorderColor 245 255 255 255
+    SetTextColor 245 255 255 255
+    SetBackgroundColor 240 90 35 255
+    SetFontSize 35
+    PlayAlertSound 14 300
+
+# Item con influencia del Elder
+Show
+    ElderItem True
+    SetBorderColor 0 128 255
+    SetTextColor 0 128 255
+    SetBackgroundColor 16 16 16
+    SetFontSize 40
+    PlayAlertSound 14 300
+
+# Mapas con influencia del Elder
+Show
+	HasInfluence Elder
+	Class "Maps"
+	SetFontSize 45
+	SetTextColor 100 0 122 255
+	SetBorderColor 100 0 255 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 1 300
+	PlayEffect Red
+	MinimapIcon 0 Red Square
+
+# Item con influencia del shaper
+Show
+    ShaperItem True
+    SetBorderColor 0 128 255
+    SetTextColor 0 128 255
+    SetBackgroundColor 16 16 16
+    SetFontSize 40
+    PlayAlertSound 14 300
+
+# Mapas con influencia del Shaper
+Show
+    ShapedMap True
+    SetBorderColor 0 255 128
+    SetTextColor 0 255 128
+    SetBackgroundColor 16 16 16
+    SetFontSize 40
+    PlayAlertSound 14 300
+
+# Item influenciados por algun Elderslayer
+Show
+    HasInfluence Crusader Hunter Redeemer Warlord
+    SetFontSize 45
+    SetTextColor 0 0 0 255
+    SetBorderColor 128 0 255 255
+    SetBackgroundColor 192 192 192 255
+    PlayAlertSound 1 300
+    PlayEffect Purple
+
+
+###########################################################################
+#
+#   Scarabs
+#
+###########################################################################
+# LOW TIER
+Show
+    Class "Map Fragments"
+    BaseType "Rusted Breach Scarab" "Rusted Cartography Scarab" "Rusted Reliquary Scarab" "Rusted Bestiary Scarab" "Rusted Shaper Scarab" "Rusted Elder Scarab" "Rusted Sulphite Scarab" "Rusted Divination Scarab" "Rusted Torment Scarab" "Rusted Ambush Scarab" "Rusted Harbinger Scarab" "Rusted Perandus Scarab"
+    SetFontSize 43
+    SetBackgroundColor 20 160 160
+    SetBorderColor 190 190 190
+    SetTextColor 190 190 190
+    PlayAlertSound 11 300
+
+# MEDIUM TIER
+Show
+    Class "Map Fragments"
+    BaseType "Polished Breach Scarab" "Polished Cartography Scarab" "Polished Reliquary Scarab" "Polished Bestiary Scarab" "Polished Shaper Scarab" "Polished Elder Scarab" "Polished Sulphite Scarab" "Polished Divination Scarab" "Polished Torment Scarab" "Polished Ambush Scarab" "Polished Harbinger Scarab" "Polished Perandus Scarab"
+    SetFontSize 43
+    SetBackgroundColor 20 160 160
+    SetBorderColor 240 240 0
+    SetTextColor 240 240 0
+    PlayAlertSound 11 300
+
+# HIGH TIER
+Show
+    Class "Map Fragments"
+    BaseType "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Reliquary Scarab" "Gilded Bestiary Scarab" "Gilded Shaper Scarab" "Gilded Elder Scarab" "Gilded Sulphite Scarab" "Gilded Divination Scarab" "Gilded Torment Scarab" "Gilded Ambush Scarab" "Gilded Harbinger Scarab" "Gilded Perandus Scarab"
+    SetFontSize 43
+    SetBackgroundColor 20 160 160
+    SetBorderColor 240 0 0
+    SetTextColor 240 0 0
+    PlayAlertSound 11 300
+
+
+###########################################################################
+#
+#   Linked Socket
+#
+###########################################################################
+
+# 5 linked
+Show
+    LinkedSockets 6
+    SetTextColor 128 0 255
+    SetBorderColor 128 0 255
+    PlayAlertSound 7 100
+    SetFontSize 45
+
+# 6 linked
+Show
+    LinkedSockets 5
+    SetTextColor 128 128 0
+    SetBorderColor 128 128 0
+    PlayAlertSound 7 100
+    SetFontSize 45
+
+
+###########################################################################
+#
+#   Cards
+#
+###########################################################################
+
+Show
+    Class "Divination"
+    SetBorderColor 64 255 255
+    SetFontSize 38
+    PlayAlertSound 9 200
+    PlayEffect Blue
+    MinimapIcon 2 Blue Circle
+
+
+###########################################################################
+#
+#   Gems
+#
+###########################################################################
+
+# Gemas importantes
+Show
+    BaseType "Enhance" "Enlighten" "Empower" "Added Chaos Damage Support"
+    SetBackgroundColor 0 0 0
+    SetBorderColor 0 128 128
+    SetFontSize 43
+
+# Gemas con calidad
+Show
+    Quality >= 5
+    Class "Gem"
+    SetBackgroundColor 0 0 0
+    SetBorderColor 0 128 128
+
+# Gemas de vaal
+Show
+    BaseType "Vaal"
+    Class "Gem"
+    SetBackgroundColor 0 0 0
+    SetBorderColor 0 128 128
+
+
+###########################################################################
+#
+#   Vendor Recipe
+#
+###########################################################################
+
+# Jewelers
+Show
+    Sockets 6
+    SetTextColor 0 0 0
+    SetBackgroundColor 239 228 176
+    SetBorderColor 0 0 0
+    SetFontSize 38
+    CustomAlertSound "sounds/gritongo.mp3"
+    PlayEffect White
+    MinimapIcon 2 Blue Diamond
+
+# Chromatic
+Show
+    LinkedSockets >= 3
+    SocketGroup "RGB"
+    SetBackgroundColor 33 30 26
+    SetBorderColor 128 255 128
+
+# Blacksmith's Whetstones & Armorer's Scraps
+Show
+    Quality = 20
+    Rarity = Normal
+    Class "Gloves" "Helmets" "Boots" "Daggers" "Wands" "Claws" "One Hand Swords" "One Hand Maces"
+    SetBackgroundColor 33 30 26
+    SetBorderColor 128 119 99
+
+
+###########################################################################
+#
+#   Atlas
+#
+###########################################################################
+Show
+    BaseType "Awakened Sextant"
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    SetBackgroundColor 0 0 0
+    SetFontSize 45
+    CustomAlertSound "sounds/geovani_callate.mp3"
+    PlayEffect Red
+    MinimapIcon 2 Red Circle
+
+Show
+    BaseType "Prime Sextant" "Simple Sextant"
+    SetBorderColor 128 255 128
+    SetTextColor 128 255 128
+    SetFontSize 43
+    PlayAlertSound 12 200
+
+Show
+    Class Gems
+    BaseType "Awakened"
+    SetFontSize 45
+    SetTextColor 30 200 200 255
+    SetBorderColor 30 150 180 255
+    SetBackgroundColor 255 255 255 255
+    PlayAlertSound 6 300
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+
+Show
+    BaseType "Watchstone"
+    SetFontSize 45
+    SetTextColor 74 230 58 255
+    SetBorderColor 74 230 58
+    SetBackgroundColor 0 0 0 255
+    PlayAlertSound 2 300
+    PlayEffect Green
+    MinimapIcon 1 Green Hexagon
+
+
+###########################################################################
+#
+#   Maps
+#
+###########################################################################
+Show
+    Class "Misc Map Items"
+    SetBorderColor 0 0 255
+    SetTextColor 0 0 255
+    SetBackgroundColor 255 255 255
+    SetFontSize 35
+
+Show 
+    Class "Map Fragments"
+    SetBackgroundColor 0 0 128
+    SetBorderColor 255 255 255
+    SetTextColor 255 255 255
+    PlayAlertSound 16 300
+    SetFontSize 43
+
+Show
+    Class "Map"
+    Rarity Unique
+    SetBackgroundColor 0 0 0
+    SetBorderColor 128 64 0
+    SetTextColor 128 64 0
+    PlayAlertSound 10 100
+    SetFontSize 43
+
+Show
+    MapTier <= 5
+    Class "Map"
+    SetBackgroundColor 192 192 192
+    SetBorderColor 0 0 128
+    SetTextColor 0 0 128
+    SetFontSize 30
+    MinimapIcon 0 White Star
+
+Show
+    MapTier <= 10
+    Class "Map"
+    SetBackgroundColor 192 192 192
+    SetBorderColor 0 0 128
+    SetTextColor 0 0 128
+    SetFontSize 36
+    MinimapIcon 0 White Star
+
+Show
+    MapTier <= 15
+    Class "Map"
+    SetBackgroundColor 192 192 192
+    SetBorderColor 0 0 128
+    SetTextColor 0 0 128
+    SetFontSize 43
+    MinimapIcon 0 White Star
+
+Show
+    MapTier <= 16
+    Class "Map"
+    SetBackgroundColor 255 255 255
+    SetBorderColor 0 0 128
+    SetTextColor 0 0 128
+    SetFontSize 43
+    MinimapIcon 0 White Star
+
+
+###########################################################################
+#
+#   Items solo del Endgame
+#
+###########################################################################
+Show
+    BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Two-Toned Boots"
+    Rarity = Rare
+    SetFontSize 42
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    SetBackgroundColor 255 255 255
+    SetFontSize 30
+    PlayAlertSound 3 88
+
+
+###########################################################################
+#
+#   Laberinto
+#
+###########################################################################
+Show
+    BaseType "Silver Key" "Treasure Key" "Golden Key"
+    SetTextColor 74 230 58
+    SetBorderColor 74 230 58
+    SetFontSize 42
+
+Show
+    BaseType "Offering to the Goddess"
+    SetTextColor 255 255 255
+    SetBorderColor 255 255 255
+    SetFontSize 45
+
+Show
+	BaseType "Dedication to the Goddess" "Gift to the Goddess" "Tribute to the Goddess"
+	SetFontSize 45
+	SetTextColor 255 255 255 255            # TEXTCOLOR:	 High Special Base
+	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 Neutral T1
+	SetBackgroundColor 159 15 213 255       # BACKGROUND:	 Special
+	PlayAlertSound 1 300                    # DROPSOUND:	 T1 Dropsound
+	PlayEffect Red
+	MinimapIcon 0 Red Hexagon
+
+
+###########################################################################
+#
+#   Faltantes
+#
+###########################################################################
+Show
+    Class "Pantheon Soul" "Quest"
+    SetFontSize 45
+    SetBorderColor 74 230 58
+    PlayEffect Green
+    MinimapIcon 1 Green Hexagon
+
+Show
+    BaseType "Divine Vessel"
+    SetTextColor 128 0 64
+    SetBorderColor 128 0 64
+    PlayAlertSound 9 88
+    SetFontSize 45
+
+Show
+    Class "Fishing Rods"
+    SetTextColor 255 255 255
+    SetBorderColor 255 255 255
+    SetFontSize 45
+
+# Currency faltante
+Show
+    Class "Stackable Currency"
+    SetTextColor 201 188 156
+    SetBorderColor 255 255 255
+    SetBackgroundColor 0 0 0 211
+    SetFontSize 40
+
+# Quest items
+Show
+    Class "Quest Items"
+    SetFontSize 45
+
+# Anillos Raros
+Show
+    Class Ring
+    Rarity Rare
+    SetBorderColor 255 0 0
+    SetTextColor 250 250 0
+
+# Items Raros
+Show
+    Rarity Rare
+    SetBorderColor 255 255 255
+    SetTextColor 250 250 0
+
+# Unicos
+Show
+    Rarity = Unique
+    SetFontSize 36
+
+###########################################################################
+#
+#   Leveo
+#
+###########################################################################
+#Show
+#   Class Flask
+
+#Show
+#   LinkedSockets 4
+
+Hide
