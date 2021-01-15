@@ -1,7 +1,7 @@
 ###########################################################################
 ###########################################################################
 #
-# MAMUSHKA 3.11
+# MAMUSHKA 3.13
 #
 ###########################################################################
 ###########################################################################
@@ -28,67 +28,275 @@
 #
 ###########################################################################
 
+#------------------------------------
+#   Ritual 3.13.0
+#-----------------------------------
+Show
+    BaseType == "Maven's Orb"
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    SetBackgroundColor 0 0 0
+    SetFontSize 45
+    PlayEffect Red
+    MinimapIcon 2 Red Circle
+
+Show
+    BaseType == "Ritual Vessel"
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    SetBackgroundColor 0 0 0
+    SetFontSize 45
+    PlayAlertSound 5 200
+    PlayEffect Red
+    MinimapIcon 2 Red Circle
+
+Show
+    BaseType "Divine Vessel" "Blood-filled Vessel"
+    SetTextColor 128 0 64
+    SetBorderColor 128 0 64
+    PlayAlertSound 9 88
+    SetFontSize 45
+
+Show
+    Class Currency
+    BaseType == "Crescent Splinter" "Orb of Unmaking"
+    SetFontSize 45
+    SetTextColor 0 0 0 255
+    SetBorderColor 0 0 0 255
+    SetBackgroundColor 240 90 35 255
+    PlayAlertSound 2 300
+    PlayEffect Orange
+    MinimapIcon 1 Orange Circle
+
+Show
+    BaseType == "Ritual Splinter" "Crescent Splinter"
+    SetBorderColor 255 128 0
+    SetTextColor 255 128 0
+    SetFontSize 43
+    PlayAlertSound 12 200
+    PlayEffect Yellow
+    MinimapIcon 2 Yellow Circle
+
+Show
+    BaseType "Glennach Cairns Watchstone" "Haewark Hamlet Watchstone" "Lex Ejoris Watchstone" "Lex Proxima Watchstone" "Lira Arthain Watchstone" "New Vastir Watchstone" "Tirn's End Watchstone" "Valdo's Rest Watchstone"
+    SetFontSize 45
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 159 15 213 255
+    PlayAlertSound 1 300
+    PlayEffect Red
+    MinimapIcon 0 Red Pentagon
+
+Show
+    BaseType "Aetherwind Gloves" "Archdemon Crown" "Atonement Mask" "Basemetal Treads" "Blizzard Crown" "Brimstone Treads" "Cloudwhisper Boots" "Darksteel Treads" "Debilitation Gauntlets" "Demon Crown" "Dreamquest Slippers" "Duskwalk Slippers" "Gale Crown" "Gauche Gloves" "Gruelling Gauntlets" "Imp Crown" "Leyline Gloves" "Nexus Gloves" "Nightwind Slippers" "Penitent Mask" "Sinistral Gloves" "Sorrow Mask" "Southswing Gloves" "Stormrider Boots" "Taxing Gauntlets" "Windbreak Boots" "Winter Crown"
+    SetFontSize 45
+    SetTextColor 0 240 190 240
+    SetBorderColor 0 240 190 240
+    PlayAlertSound 3 300
+    PlayEffect Yellow
+    MinimapIcon 0 Yellow Diamond
+
+Show
+    BaseType "Maven's Invitation: Glennach Cairns" "Maven's Invitation: Haewark Hamlet" "Maven's Invitation: Lex Ejoris" "Maven's Invitation: Lex Proxima" "Maven's Invitation: Lira Arthain" "Maven's Invitation: New Vastir" "Maven's Invitation: Tirn's End" "Maven's Invitation: Valdo's Rest"
+    SetFontSize 45
+    SetTextColor 238 81 21 255
+    SetBorderColor 234 97 21 255
+    SetBackgroundColor 23 4 30 255
+    PlayAlertSound 1 300
+    PlayEffect Orange
+    MinimapIcon 0 Orange Pentagon
+
+Show
+    Class "Map Fragments"
+    BaseType "The Maven's Writ"
+    SetFontSize 45
+    SetTextColor 238 81 21 255
+    SetBorderColor 234 97 21 255
+    SetBackgroundColor 23 4 30 255
+    PlayAlertSound 1 300
+    PlayEffect Orange
+    MinimapIcon 0 Orange Pentagon
+
+#------------------------------------
+#   Heist 3.12.0
+#-----------------------------------
+Show
+    AnyEnchantment True
+    Class "Body Armours" "Bows" "Claws" "Daggers" "One Hand" "Quivers" "Rune Dagger" "Sceptre" "Shields" "Staves" "Two Hand" "Wand" "Warstaves"
+    SetFontSize 45
+    SetTextColor 0 240 190 240
+    SetBorderColor 0 240 190 240
+    PlayAlertSound 3 300
+    PlayEffect Purple
+    MinimapIcon 1 Purple Diamond
+
+Show
+    ItemLevel >= 45
+    Rarity <= Rare
+    Class Trinket
+    SetFontSize 45
+    SetTextColor 150 0 255 255
+    SetBorderColor 220 0 0 240
+    SetBackgroundColor 34 0 34 255
+    PlayAlertSound 2 300
+    PlayEffect Purple Temp
+    MinimapIcon 2 Purple Diamond
+
+Show
+    BaseType "Accumulator Wand" "Alternating Sceptre" "Anarchic Spiritblade" "Apex Cleaver" "Astrolabe Amulet" "Banishing Blade" "Battery Staff" "Boom Mace" "Cogwork Ring" "Cold-attuned Buckler" "Eventuality Rod" "Geodesic Ring" "Heat-attuned Tower Shield" "Impact Force Propagator" "Infernal Blade" "Mechalarm Belt" "Micro-Distillery Belt" "Pneumatic Dagger" "Psychotic Axe" "Simplex Amulet" "Solarine Bow" "Transfer-attuned Spirit Shield" "Void Fangs"
+    SetFontSize 45
+    SetTextColor 0 240 190 240
+    SetBorderColor 0 240 190 240
+    PlayAlertSound 3 300
+    PlayEffect Purple
+    MinimapIcon 0 Purple Diamond
+
+Show
+    BaseType "Assembler Wand" "Blasting Blade" "Blunt Force Condenser" "Capacity Rod" "Capricious Spiritblade" "Congregator Wand" "Crack Mace" "Crushing Force Magnifier" "Disapprobation Axe" "Endothermic Buckler" "Exhausting Spirit Shield" "Exothermic Tower Shield" "Fickle Spiritblade" "Flare Mace" "Flashfire Blade" "Flickerflame Blade" "Foundry Bow" "Hedron Bow" "Hollowpoint Dagger" "Honed Cleaver" "Magmatic Tower Shield" "Malign Fangs" "Maltreatment Axe" "Oscillating Sceptre" "Polar Buckler" "Potentiality Rod" "Pressurised Dagger" "Prime Cleaver" "Rebuking Blade" "Reciprocation Staff" "Shadow Fangs" "Stabilising Sceptre" "Subsuming Spirit Shield" "Transformer Staff"
+    SetFontSize 45
+    SetBorderColor 0 240 190 240
+    PlayAlertSound 2 300
+    PlayEffect Purple
+    MinimapIcon 1 Purple Diamond
+
+Show
+    Class "Heist Tool" "Heist Cloak" "Heist Brooch" "Heist Gear" "Heist Tool"
+    SetBorderColor 0 240 190 240
+    PlayEffect Grey Temp
+    MinimapIcon 2 Grey Raindrop
+
+Show
+    Class "Contract"
+    BaseType "Contract: Bunker" "Contract: Laboratory" "Contract: Mansion" "Contract: Prohibited Library" "Contract: Records Office" "Contract: Repository" "Contract: Smuggler's Den" "Contract: Tunnels" "Contract: Underbelly"
+    SetFontSize 45
+    SetBorderColor 255 85 85 255
+    SetBackgroundColor 40 0 30 255
+    PlayAlertSound 4 300
+    PlayEffect Purple
+    MinimapIcon 2 Purple UpsideDownHouse
+
+Show
+    Class "Contract"
+    SetFontSize 45
+    SetBorderColor 255 85 85 255
+    SetBackgroundColor 40 0 30 255
+    PlayAlertSound 4 300
+    PlayEffect Purple
+    MinimapIcon 2 Purple UpsideDownHouse
+
+Show
+    Class "Blueprint"
+    BaseType "Blueprint: Bunker" "Blueprint: Laboratory" "Blueprint: Mansion" "Blueprint: Prohibited Library" "Blueprint: Records Office" "Blueprint: Repository" "Blueprint: Smuggler's Den" "Blueprint: Tunnels" "Blueprint: Underbelly"
+    SetFontSize 45
+    SetTextColor 255 85 85 255
+    SetBorderColor 255 85 85 255
+    SetBackgroundColor 40 0 30 255
+    PlayAlertSound 1 300
+    PlayEffect Red
+    MinimapIcon 0 Red UpsideDownHouse
+
+Show
+    Class "Blueprint"
+    SetFontSize 45
+    SetTextColor 255 85 85 255
+    SetBorderColor 255 85 85 255
+    SetBackgroundColor 40 0 30 255
+    PlayAlertSound 1 300
+    PlayEffect Red
+    MinimapIcon 0 Red UpsideDownHouse
+
+Show
+    Class Currency
+    BaseType == "Prime Regrading Lens" "Secondary Regrading Lens" "Tailoring Orb" "Tempering Orb"
+    SetFontSize 45
+    SetTextColor 0 0 0 255
+    SetBorderColor 0 0 0 255
+    SetBackgroundColor 240 90 35 255
+    PlayAlertSound 1 300
+    PlayEffect Red
+    MinimapIcon 0 Red Circle
+
+Show
+    Class Currency
+    BaseType == "Rogue's Marker"
+    SetFontSize 45
+    SetTextColor 175 60 60 255
+    SetBorderColor 175 60 60 135
+    SetBackgroundColor 0 0 0 255
+    PlayAlertSound 2 300
+    PlayEffect Purple
+    MinimapIcon 2 Purple Circle
+
+Show
+    Class "Heist Target"
+    SetFontSize 45
+    SetTextColor 74 230 58 255
+    SetBorderColor 74 230 58
+    SetBackgroundColor 0 0 0 255
+    PlayAlertSound 2 300
+    PlayEffect Green
+    MinimapIcon 1 Green Hexagon
 
 #------------------------------------
 #   Harvest 3.11.0
 #-----------------------------------
 Show
-	Class "Harvest Seed"
-	BaseType "Primal Cleaveling Seed" "Primal Dustspitter Seed" "Primal Feasting Horror Seed" "Primal Maw Seed" "Primal Rhoa Seed" "Vivid Arachnid Seed" "Vivid Leech Seed" "Vivid Scorpion Seed" "Vivid Thornweaver Seed" "Vivid Weta Seed" "Wild Ape Seed" "Wild Hatchling Seed" "Wild Hellion Seed" "Wild Thornwolf Seed" "Wild Ursaling Seed"
-	SetFontSize 45
-	SetTextColor 149 228 158 255            # TEXTCOLOR:	 High Special Base
-	SetBorderColor 149 228 158 255          # BORDERCOLOR:	 Neutral T1.5
-	SetBackgroundColor 0 0 0 255            # BACKGROUND:	 Currency T4
-	DisableDropSound True
-	PlayAlertSound 2 300
-	PlayEffect White
-	MinimapIcon 2 Grey Raindrop
+    Class "Harvest Seed"
+    BaseType "Primal Cleaveling Seed" "Primal Dustspitter Seed" "Primal Feasting Horror Seed" "Primal Maw Seed" "Primal Rhoa Seed" "Vivid Arachnid Seed" "Vivid Leech Seed" "Vivid Scorpion Seed" "Vivid Thornweaver Seed" "Vivid Weta Seed" "Wild Ape Seed" "Wild Hatchling Seed" "Wild Hellion Seed" "Wild Thornwolf Seed" "Wild Ursaling Seed"
+    SetFontSize 45
+    SetTextColor 149 228 158 255
+    SetBorderColor 149 228 158 255
+    SetBackgroundColor 0 0 0 255
+    DisableDropSound True
+    PlayAlertSound 2 300
+    PlayEffect White
+    MinimapIcon 2 Grey Raindrop
 
 Show
-	Class "Harvest Seed"
-	BaseType "Primal Chimeral Grain" "Primal Dustcrab Grain" "Primal Rhex Grain" "Primal Scrabbler Grain" "Primal Viper Grain" "Vivid Nestback Grain" "Vivid Parasite Grain" "Vivid Razorleg Grain" "Vivid Sapsucker Grain" "Vivid Striketail Grain" "Wild Bristlebeast Grain" "Wild Chieftain Grain" "Wild Homunculus Grain" "Wild Snap Hound Grain" "Wild Spikeback Grain"
-	SetFontSize 45
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0
-	SetBackgroundColor 149 228 158 255
-	DisableDropSound True
-	PlayAlertSound 2 300
-	PlayEffect White
-	MinimapIcon 2 White Raindrop
+    Class "Harvest Seed"
+    BaseType "Primal Chimeral Grain" "Primal Dustcrab Grain" "Primal Rhex Grain" "Primal Scrabbler Grain" "Primal Viper Grain" "Vivid Nestback Grain" "Vivid Parasite Grain" "Vivid Razorleg Grain" "Vivid Sapsucker Grain" "Vivid Striketail Grain" "Wild Bristlebeast Grain" "Wild Chieftain Grain" "Wild Homunculus Grain" "Wild Snap Hound Grain" "Wild Spikeback Grain"
+    SetFontSize 45
+    SetTextColor 0 0 0 255
+    SetBorderColor 0 0 0
+    SetBackgroundColor 149 228 158 255
+    DisableDropSound True
+    PlayAlertSound 2 300
+    PlayEffect White
+    MinimapIcon 2 White Raindrop
 
 Show
-	Class "Harvest Seed"
-	BaseType "Primal Blisterlord Bulb" "Primal Crushclaw Bulb" "Primal Cystcaller Bulb" "Primal Reborn Bulb" "Primal Rhex Matriarch Bulb" "Vivid Abberarach Bulb" "Vivid Devourer Bulb" "Vivid Vulture Bulb" "Vivid Watcher Bulb" "Vivid Whipleg Bulb" "Wild Brambleback Bulb" "Wild Bristle Matron Bulb" "Wild Hellion Alpha Bulb" "Wild Infestation Queen Bulb" "Wild Thornmaw Bulb"
-	SetFontSize 45
-	SetTextColor 0 0 0 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 49 234 70 255
-	DisableDropSound True
-	PlayAlertSound 2 300
-	PlayEffect Yellow
-	MinimapIcon 1 Yellow Raindrop
+    Class "Harvest Seed"
+    BaseType "Primal Blisterlord Bulb" "Primal Crushclaw Bulb" "Primal Cystcaller Bulb" "Primal Reborn Bulb" "Primal Rhex Matriarch Bulb" "Vivid Abberarach Bulb" "Vivid Devourer Bulb" "Vivid Vulture Bulb" "Vivid Watcher Bulb" "Vivid Whipleg Bulb" "Wild Brambleback Bulb" "Wild Bristle Matron Bulb" "Wild Hellion Alpha Bulb" "Wild Infestation Queen Bulb" "Wild Thornmaw Bulb"
+    SetFontSize 45
+    SetTextColor 0 0 0 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 49 234 70 255
+    DisableDropSound True
+    PlayAlertSound 2 300
+    PlayEffect Yellow
+    MinimapIcon 1 Yellow Raindrop
 
 Show
-	Class "Harvest Seed"
-	BaseType "Primal Blisterfruit" "Vivid Scalefruit" "Wild Thornfruit"
-	SetFontSize 45
-	SetTextColor 20 80 10 255
-	SetBorderColor 20 80 10 255
-	SetBackgroundColor 255 255 255 255
-	DisableDropSound True
-	PlayAlertSound 6 300
-	PlayEffect Red
-	MinimapIcon 0 Red Raindrop
+    Class "Harvest Seed"
+    BaseType "Primal Blisterfruit" "Vivid Scalefruit" "Wild Thornfruit"
+    SetFontSize 45
+    SetTextColor 20 80 10 255
+    SetBorderColor 20 80 10 255
+    SetBackgroundColor 255 255 255 255
+    DisableDropSound True
+    PlayAlertSound 6 300
+    PlayEffect Red
+    MinimapIcon 0 Red Raindrop
 
 Show
-	Class "Harvest Seed"
-	SetFontSize 45
-	SetTextColor 255 0 255 255              # TEXTCOLOR:	 Update your filter
-	SetBorderColor 255 0 255 255            # BORDERCOLOR:	 Update your filter
-	SetBackgroundColor 100 0 100 255        # BACKGROUND:    Update your filter
-	PlayAlertSound 2 300                    # DROPSOUND:	 Currency Sound
-	PlayEffect Pink
-	MinimapIcon 1 Pink Circle
+    Class "Harvest Seed"
+    SetFontSize 45
+    SetTextColor 255 0 255 255
+    SetBorderColor 255 0 255 255
+    SetBackgroundColor 100 0 100 255
+    PlayAlertSound 2 300
+    PlayEffect Pink
+    MinimapIcon 1 Pink Circle
 
 #------------------------------------
 #   Delirium 3.10.0
@@ -104,6 +312,28 @@ Show
     PlayAlertSound 2 300
     PlayEffect Orange
     MinimapIcon 1 Orange Circle
+
+Show
+   Class Currency
+   BaseType "Abyssal Delirium Orb" "Amorphous Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Cartographer's Delirium Orb" "Decadent Delirium Orb" "Delirium Orb" "Fragmented Delirium Orb" "Imperial Delirium Orb" "Jeweller's Delirium Orb" "Portentous Delirium Orb" "Primal Delirium Orb" "Singular Delirium Orb" "Timeless Delirium Orb" "Whispering Delirium Orb"
+   SetFontSize 45
+   SetTextColor 255 0 0 255
+   SetBorderColor 255 0 0 255
+   SetBackgroundColor 128 128 128 255
+   PlayAlertSound 3 300
+   PlayEffect Red
+   MinimapIcon 0 Red Star
+
+Show
+    BaseType "Large Cluster Jewel" "Medium Cluster Jewel" "Small Cluster Jewel"
+    SetFontSize 45
+    SetTextColor 150 0 255 255
+    SetBorderColor 150 0 255 255
+    SetBackgroundColor 34 0 67 255
+    PlayAlertSound 2 300
+    PlayEffect Purple
+    CustomAlertSound "sounds/josemiguel.mp3"
+    MinimapIcon 2 Purple Diamond
 
 #------------------------------------
 #   Metamorph 3.9.0
@@ -122,18 +352,6 @@ Show
 #------------------------------------
 #   Blight 3.8.0
 #------------------------------------
-Show
-    BlightedMap True
-    MapTier >= 15
-    Class Maps
-    SetFontSize 45
-    SetTextColor 20 50 20 255
-    SetBorderColor 20 50 20 255
-    SetBackgroundColor 255 255 255 255
-    PlayAlertSound 6 300
-    PlayEffect Red
-    MinimapIcon 0 Red Star
-
 Show
     BlightedMap True
     Class Maps
@@ -160,18 +378,17 @@ Show
 #   Legion 3.7.0
 #------------------------------------
 Show
-    Class Currency
-    BaseType "Incubator"
-    SetTextColor 98 16 117 255
-    SetBorderColor 98 16 117 255
-    SetBackgroundColor 30 200 200 255
+    Class Incubator
     SetFontSize 45
-    PlayEffect White
-    MinimapIcon 0 White Star
-    PlayAlertSound 10 300
+    SetTextColor 255 0 255 255
+    SetBorderColor 255 0 255 255
+    SetBackgroundColor 100 0 100 255
+    PlayAlertSound 2 300
+    PlayEffect Pink
+    MinimapIcon 1 Pink Circle
 
 Show
-	Class "Map Fragments"
+    Class "Map Fragments"
     BaseType "Timeless Karui Emblem" "Timeless Maraketh Emblem" "Timeless Templar Emblem" "Timeless Vaal Emblem"
     SetTextColor 255 190 0
     SetBorderColor 255 190 0
@@ -183,7 +400,7 @@ Show
 
 Show
     Class Currency
-	BaseType "Timeless Maraketh Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
+    BaseType "Timeless Maraketh Splinter" "Timeless Eternal Empire Splinter" "Timeless Karui Splinter" "Timeless Templar Splinter" "Timeless Vaal Splinter"
     SetBorderColor 0 128 0 255
     SetBackgroundColor 210 178 135 255
     SetFontSize 30
@@ -195,15 +412,15 @@ Show
 #   Synthesis 3.6.0
 #------------------------------------
 Show
-	SynthesisedItem True
-    SetBorderColor 245 255 0 255
-    SetTextColor 245 255 0 255
+    SynthesisedItem True
+    SetBorderColor 255 255 0 255
+    SetTextColor 255 255 0 255
     SetBackgroundColor 30 200 200 255
     SetFontSize 35
     PlayAlertSound 14 300
 
 Show
-	FracturedItem True
+    FracturedItem True
     SetBorderColor 96 96 96 255
     SetTextColor 96 96 96 255
     SetBackgroundColor 30 200 200 255
@@ -344,28 +561,28 @@ Show
     SetFontSize 45
 
 Show
-	Class Piece
-	SetFontSize 45
-	SetTextColor 255 255 255 255
-	SetBorderColor 255 255 255 255
-	SetBackgroundColor 37 105 175 255
-	PlayAlertSound 1 300
-	PlayEffect Blue
-	MinimapIcon 0 Blue Star
+    Class Piece
+    SetFontSize 45
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 37 105 175 255
+    PlayAlertSound 1 300
+    PlayEffect Blue
+    MinimapIcon 0 Blue Star
 
 #------------------------------------
 #   Legacy 2.6.0
 #------------------------------------
 Show
-	Class "Misc Map Items"
-	BaseType "Ancient Reliquary Key" "Timeworn Reliquary Key"
-	SetFontSize 45
-	SetTextColor 255 0 0 255                # TEXTCOLOR:	 T0 Item
-	SetBorderColor 255 0 0 255              # BORDERCOLOR:	 T0 Item
-	SetBackgroundColor 255 255 255 255      # BACKGROUND:	 T0 Drop
-	PlayAlertSound 6 300                    # DROPSOUND:	 T0 Drop
-	PlayEffect Red
-	MinimapIcon 0 Red Star
+    Class "Misc Map Items"
+    BaseType "Ancient Reliquary Key" "Timeworn Reliquary Key"
+    SetFontSize 45
+    SetTextColor 255 0 0 255                # TEXTCOLOR:     T0 Item
+    SetBorderColor 255 0 0 255              # BORDERCOLOR:   T0 Item
+    SetBackgroundColor 255 255 255 255      # BACKGROUND:    T0 Drop
+    PlayAlertSound 6 300                    # DROPSOUND:     T0 Drop
+    PlayEffect Red
+    MinimapIcon 0 Red Star
 
 #------------------------------------
 #   Breach 2.5.0
@@ -379,6 +596,17 @@ Show
     SetFontSize 39
     MinimapIcon 1 Brown Circle
     PlayAlertSound 2 200
+
+Show
+    Class Currency
+    BaseType "Blessing of Xoph" "Blessing of Uul-Netol" "Blessing of Tul" "Blessing of Esh" "Blessing of Chayula"
+    SetBorderColor 130 25 255 255
+    SetBackgroundColor 186 186 186
+    SetTextColor 130 25 255
+    SetFontSize 42
+    PlayEffect Purple
+    MinimapIcon 1 Brown Star
+    PlayAlertSound 3 200
 
 Show
     Class Rings
@@ -410,7 +638,7 @@ Show
     SetFontSize 42
 
 Show
-	Class Currency
+    Class Currency
     BaseType "Prophecy"
     SetTextColor 163 73 164
     SetBorderColor 163 73 164
@@ -418,15 +646,15 @@ Show
     SetFontSize 42
 
 Show
-	Class "Map Fragments"
-	BaseType "Eber's Key" "Inya's Key" "Volkuur's Key" "Yriel's Key"
-	SetFontSize 45
-	SetTextColor 0 0 0 255
-	SetBorderColor 0 0 0 255
-	SetBackgroundColor 159 15 213 255
-	PlayAlertSound 2 300
-	PlayEffect White
-	MinimapIcon 1 Yellow Hexagon
+    Class "Map Fragments"
+    BaseType "Eber's Key" "Inya's Key" "Volkuur's Key" "Yriel's Key"
+    SetFontSize 45
+    SetTextColor 0 0 0 255
+    SetBorderColor 0 0 0 255
+    SetBackgroundColor 159 15 213 255
+    PlayAlertSound 2 300
+    PlayEffect White
+    MinimapIcon 1 Yellow Hexagon
 
 #------------------------------------
 #   Perandus 2.2.0
@@ -465,7 +693,17 @@ Show
     MinimapIcon 2 Red Circle
 
 Show
-    BaseType "Eternal Orb" "Divine Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Stacked Deck"
+    BaseType "Divine Orb"
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    SetBackgroundColor 0 0 0
+    SetFontSize 45
+    CustomAlertSound "sounds/un_manjarsh.mp3"
+    PlayEffect Red
+    MinimapIcon 2 Red Circle
+
+Show
+    BaseType "Eternal Orb" "Mirror of Kalandra" "Albino Rhoa Feather" "Stacked Deck" "Exalted Shard"
     SetTextColor 255 0 0
     SetBorderColor 255 0 0
     SetBackgroundColor 0 0 0
@@ -503,7 +741,16 @@ Show
     MinimapIcon 2 Yellow Triangle
 
 Show
-    BaseType "Gemcutter's Prism" "Orb of Alchemy" "Orb of Fusing" "Orb of Scouring" "Orb of Horizons" "Blessed Orb" "Cartographer's Chisel" "Vaal Orb" "Glassblower's Bauble" "Horizon Shard" "Chaos Shard" "Alchemy Shard" "Regal Shard"
+    BaseType "Cartographer's Chisel"
+    SetBorderColor 255 128 0
+    SetTextColor 255 128 0
+    SetFontSize 43
+    CustomAlertSound "sounds/el_pepe.mp3"
+    PlayEffect Yellow
+    MinimapIcon 2 Yellow Triangle
+
+Show
+    BaseType "Gemcutter's Prism" "Orb of Alchemy" "Orb of Fusing" "Orb of Scouring" "Orb of Horizons" "Blessed Orb" "Vaal Orb" "Glassblower's Bauble" "Horizon Shard" "Chaos Shard" "Alchemy Shard" "Regal Shard"
     SetBorderColor 255 128 0
     SetTextColor 255 128 0
     SetFontSize 43
@@ -528,14 +775,14 @@ Show
 
 # Harvest
 Show
-	BaseType "Deregulation Scroll" "Electroshock Scroll" "Fragmentation Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Time-light Scroll"
-	SetFontSize 45
-	SetTextColor 255 255 255 255            # TEXTCOLOR:	 Cosmetic White
-	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 T1 highlight
-	SetBackgroundColor 37 105 175 255       # BACKGROUND:	 Piece
-	PlayAlertSound 1 300                    # DROPSOUND:	 T1 Dropsound
-	PlayEffect Blue
-	MinimapIcon 0 Blue Star
+    BaseType "Deregulation Scroll" "Electroshock Scroll" "Fragmentation Scroll" "Haemocombustion Scroll" "Specularity Scroll" "Time-light Scroll"
+    SetFontSize 45
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 37 105 175 255
+    PlayAlertSound 1 300
+    PlayEffect Blue
+    MinimapIcon 0 Blue Star
 
 
 ###########################################################################
@@ -545,7 +792,7 @@ Show
 ###########################################################################
 # Encantados con mod del laberinto
 Show
-	AnyEnchantment True
+    AnyEnchantment True
     SetBorderColor 245 255 255 255
     SetTextColor 245 255 255 255
     SetBackgroundColor 240 90 35 255
@@ -563,15 +810,15 @@ Show
 
 # Mapas con influencia del Elder
 Show
-	HasInfluence Elder
-	Class "Maps"
-	SetFontSize 45
-	SetTextColor 100 0 122 255
-	SetBorderColor 100 0 255 255
-	SetBackgroundColor 255 255 255 255
-	PlayAlertSound 1 300
-	PlayEffect Red
-	MinimapIcon 0 Red Square
+    HasInfluence Elder
+    Class "Maps"
+    SetFontSize 45
+    SetTextColor 100 0 122 255
+    SetBorderColor 100 0 255 255
+    SetBackgroundColor 255 255 255 255
+    PlayAlertSound 1 300
+    PlayEffect Red
+    MinimapIcon 0 Red Square
 
 # Item con influencia del shaper
 Show
@@ -595,10 +842,10 @@ Show
 Show
     HasInfluence Crusader Hunter Redeemer Warlord
     SetFontSize 45
-    SetTextColor 0 0 0 255
+    SetTextColor 128 0 255 255
     SetBorderColor 128 0 255 255
-    SetBackgroundColor 192 192 192 255
-    PlayAlertSound 1 300
+    SetBackgroundColor 190 190 190 255
+    PlayAlertSound 15 300
     PlayEffect Purple
 
 
@@ -687,6 +934,7 @@ Show
     BaseType "Enhance" "Enlighten" "Empower" "Added Chaos Damage Support"
     SetBackgroundColor 0 0 0
     SetBorderColor 0 128 128
+    CustomAlertSound "sounds/eeeo.mp3"
     SetFontSize 43
 
 # Gemas con calidad
@@ -835,6 +1083,7 @@ Show
     SetBorderColor 0 0 128
     SetTextColor 0 0 128
     SetFontSize 43
+    CustomAlertSound "sounds/mapa_rojo.mp3"
     MinimapIcon 0 White Star
 
 Show
@@ -881,14 +1130,14 @@ Show
     SetFontSize 45
 
 Show
-	BaseType "Dedication to the Goddess" "Gift to the Goddess" "Tribute to the Goddess"
-	SetFontSize 45
-	SetTextColor 255 255 255 255            # TEXTCOLOR:	 High Special Base
-	SetBorderColor 255 255 255 255          # BORDERCOLOR:	 Neutral T1
-	SetBackgroundColor 159 15 213 255       # BACKGROUND:	 Special
-	PlayAlertSound 1 300                    # DROPSOUND:	 T1 Dropsound
-	PlayEffect Red
-	MinimapIcon 0 Red Hexagon
+    BaseType "Dedication to the Goddess" "Gift to the Goddess" "Tribute to the Goddess"
+    SetFontSize 45
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 159 15 213 255
+    PlayAlertSound 1 300
+    PlayEffect Red
+    MinimapIcon 0 Red Hexagon
 
 
 ###########################################################################
@@ -931,7 +1180,7 @@ Show
 
 # Anillos Raros
 Show
-    Class Ring
+    Class Ring Belt Amulet
     Rarity Rare
     SetBorderColor 255 0 0
     SetTextColor 250 250 0
