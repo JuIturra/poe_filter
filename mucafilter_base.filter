@@ -240,63 +240,7 @@ Show
 #------------------------------------
 #   Harvest 3.11.0
 #-----------------------------------
-Show
-    Class "Harvest Seed"
-    BaseType "Primal Cleaveling Seed" "Primal Dustspitter Seed" "Primal Feasting Horror Seed" "Primal Maw Seed" "Primal Rhoa Seed" "Vivid Arachnid Seed" "Vivid Leech Seed" "Vivid Scorpion Seed" "Vivid Thornweaver Seed" "Vivid Weta Seed" "Wild Ape Seed" "Wild Hatchling Seed" "Wild Hellion Seed" "Wild Thornwolf Seed" "Wild Ursaling Seed"
-    SetFontSize 45
-    SetTextColor 149 228 158 255
-    SetBorderColor 149 228 158 255
-    SetBackgroundColor 0 0 0 255
-    DisableDropSound True
-    PlayAlertSound 2 300
-    PlayEffect White
-    MinimapIcon 2 Grey Raindrop
 
-Show
-    Class "Harvest Seed"
-    BaseType "Primal Chimeral Grain" "Primal Dustcrab Grain" "Primal Rhex Grain" "Primal Scrabbler Grain" "Primal Viper Grain" "Vivid Nestback Grain" "Vivid Parasite Grain" "Vivid Razorleg Grain" "Vivid Sapsucker Grain" "Vivid Striketail Grain" "Wild Bristlebeast Grain" "Wild Chieftain Grain" "Wild Homunculus Grain" "Wild Snap Hound Grain" "Wild Spikeback Grain"
-    SetFontSize 45
-    SetTextColor 0 0 0 255
-    SetBorderColor 0 0 0
-    SetBackgroundColor 149 228 158 255
-    DisableDropSound True
-    PlayAlertSound 2 300
-    PlayEffect White
-    MinimapIcon 2 White Raindrop
-
-Show
-    Class "Harvest Seed"
-    BaseType "Primal Blisterlord Bulb" "Primal Crushclaw Bulb" "Primal Cystcaller Bulb" "Primal Reborn Bulb" "Primal Rhex Matriarch Bulb" "Vivid Abberarach Bulb" "Vivid Devourer Bulb" "Vivid Vulture Bulb" "Vivid Watcher Bulb" "Vivid Whipleg Bulb" "Wild Brambleback Bulb" "Wild Bristle Matron Bulb" "Wild Hellion Alpha Bulb" "Wild Infestation Queen Bulb" "Wild Thornmaw Bulb"
-    SetFontSize 45
-    SetTextColor 0 0 0 255
-    SetBorderColor 255 255 255 255
-    SetBackgroundColor 49 234 70 255
-    DisableDropSound True
-    PlayAlertSound 2 300
-    PlayEffect Yellow
-    MinimapIcon 1 Yellow Raindrop
-
-Show
-    Class "Harvest Seed"
-    BaseType "Primal Blisterfruit" "Vivid Scalefruit" "Wild Thornfruit"
-    SetFontSize 45
-    SetTextColor 20 80 10 255
-    SetBorderColor 20 80 10 255
-    SetBackgroundColor 255 255 255 255
-    DisableDropSound True
-    PlayAlertSound 6 300
-    PlayEffect Red
-    MinimapIcon 0 Red Raindrop
-
-Show
-    Class "Harvest Seed"
-    SetFontSize 45
-    SetTextColor 255 0 255 255
-    SetBorderColor 255 0 255 255
-    SetBackgroundColor 100 0 100 255
-    PlayAlertSound 2 300
-    PlayEffect Pink
-    MinimapIcon 1 Pink Circle
 
 #------------------------------------
 #   Delirium 3.10.0
