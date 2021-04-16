@@ -29,6 +29,19 @@
 ###########################################################################
 
 #------------------------------------
+#   Ultimatum 3.14.0
+#-----------------------------------
+Show
+    BaseType "Inscribed Ultimatum"
+    SetFontSize 45
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 159 15 213 255
+    PlayAlertSound 1 300
+    PlayEffect Red
+    MinimapIcon 0 Red Hexagon
+
+#------------------------------------
 #   Ritual 3.13.0
 #-----------------------------------
 Show
@@ -240,6 +253,7 @@ Show
 #------------------------------------
 #   Harvest 3.11.0
 #-----------------------------------
+
 
 #------------------------------------
 #   Delirium 3.10.0
@@ -458,6 +472,16 @@ Show
     PlayEffect Green
     MinimapIcon 1 Green Hexagon
 
+Show
+    BaseType "Chronicle of Atzoatl"
+    SetFontSize 45
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 159 15 213 255
+    PlayAlertSound 1 300
+    PlayEffect Red
+    MinimapIcon 0 Red Hexagon
+
 #------------------------------------
 #   Bestiary 3.2.0
 #------------------------------------
@@ -518,7 +542,7 @@ Show
 #------------------------------------
 Show
     Class "Misc Map Items"
-    BaseType "Ancient Reliquary Key" "Timeworn Reliquary Key"
+    BaseType "Ancient Reliquary Key" "Timeworn Reliquary Key" "Vaal Reliquary Key"
     SetFontSize 45
     SetTextColor 255 0 0 255                # TEXTCOLOR:     T0 Item
     SetBorderColor 255 0 0 255              # BORDERCOLOR:   T0 Item
@@ -657,7 +681,7 @@ Show
 
 # Currency medio
 Show
-    BaseType "Chaos Orb"
+    BaseType "Chaos Orb" "Veiled Chaos Orb"
     SetBorderColor 255 128 0
     SetTextColor 255 128 0
     SetFontSize 43
@@ -800,7 +824,7 @@ Show
 # LOW TIER
 Show
     Class "Map Fragments"
-    BaseType "Rusted Breach Scarab" "Rusted Cartography Scarab" "Rusted Reliquary Scarab" "Rusted Bestiary Scarab" "Rusted Shaper Scarab" "Rusted Elder Scarab" "Rusted Sulphite Scarab" "Rusted Divination Scarab" "Rusted Torment Scarab" "Rusted Ambush Scarab" "Rusted Harbinger Scarab" "Rusted Perandus Scarab"
+    BaseType "Rusted Abyss Scarab" "Rusted Blight Scarab" "Rusted Breach Scarab" "Rusted Cartography Scarab" "Rusted Reliquary Scarab" "Rusted Bestiary Scarab" "Rusted Shaper Scarab" "Rusted Elder Scarab" "Rusted Sulphite Scarab" "Rusted Divination Scarab" "Rusted Torment Scarab" "Rusted Ambush Scarab" "Rusted Harbinger Scarab" "Rusted Perandus Scarab"
     SetFontSize 43
     SetBackgroundColor 20 160 160
     SetBorderColor 190 190 190
@@ -810,7 +834,7 @@ Show
 # MEDIUM TIER
 Show
     Class "Map Fragments"
-    BaseType "Polished Breach Scarab" "Polished Cartography Scarab" "Polished Reliquary Scarab" "Polished Bestiary Scarab" "Polished Shaper Scarab" "Polished Elder Scarab" "Polished Sulphite Scarab" "Polished Divination Scarab" "Polished Torment Scarab" "Polished Ambush Scarab" "Polished Harbinger Scarab" "Polished Perandus Scarab"
+    BaseType "Polished Abyss Scarab" "Polished Blight Scarab" "Polished Breach Scarab" "Polished Cartography Scarab" "Polished Reliquary Scarab" "Polished Bestiary Scarab" "Polished Shaper Scarab" "Polished Elder Scarab" "Polished Sulphite Scarab" "Polished Divination Scarab" "Polished Torment Scarab" "Polished Ambush Scarab" "Polished Harbinger Scarab" "Polished Perandus Scarab"
     SetFontSize 43
     SetBackgroundColor 20 160 160
     SetBorderColor 240 240 0
@@ -820,12 +844,24 @@ Show
 # HIGH TIER
 Show
     Class "Map Fragments"
-    BaseType "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Reliquary Scarab" "Gilded Bestiary Scarab" "Gilded Shaper Scarab" "Gilded Elder Scarab" "Gilded Sulphite Scarab" "Gilded Divination Scarab" "Gilded Torment Scarab" "Gilded Ambush Scarab" "Gilded Harbinger Scarab" "Gilded Perandus Scarab"
+    BaseType "Gilded Abyss Scarab" "Gilded Blight Scarab" "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Reliquary Scarab" "Gilded Bestiary Scarab" "Gilded Shaper Scarab" "Gilded Elder Scarab" "Gilded Sulphite Scarab" "Gilded Divination Scarab" "Gilded Torment Scarab" "Gilded Ambush Scarab" "Gilded Harbinger Scarab" "Gilded Perandus Scarab"
     SetFontSize 43
     SetBackgroundColor 20 160 160
     SetBorderColor 240 0 0
     SetTextColor 240 0 0
     PlayAlertSound 11 300
+
+# MAX TIER
+Show
+    Class "Map Fragments"
+    BaseType "Craicic Lure" "Farric Lure" "Fenumal Lure" "Gilded Abyss Scarab" "Gilded Ambush Scarab" "Gilded Blight Scarab" "Gilded Breach Scarab" "Gilded Divination Scarab" "Gilded Harbinger Scarab" "Gilded Legion Scarab" "Gilded Sulphite Scarab" "Saqawine Lure" "Winged Abyss Scarab" "Winged Ambush Scarab" "Winged Blight Scarab" "Winged Breach Scarab" "Winged Cartography Scarab" "Winged Divination Scarab" "Winged Elder Scarab" "Winged Harbinger Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab" "Winged Perandus Scarab" "Winged Reliquary Scarab" "Winged Sulphite Scarab"
+    SetFontSize 45
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 159 15 213 255
+    PlayAlertSound 1 300
+    PlayEffect Red
+    MinimapIcon 0 Red Hexagon
 
 
 ###########################################################################
@@ -1036,6 +1072,7 @@ Show
     SetBorderColor 0 0 128
     SetTextColor 0 0 128
     SetFontSize 43
+    CustomAlertSound "sounds/nya.mp3"
     MinimapIcon 0 White Star
 
 
@@ -1045,7 +1082,7 @@ Show
 #
 ###########################################################################
 Show
-    BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Two-Toned Boots"
+    BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Two-Toned Boots" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring" "Convoking Wand"
     Rarity = Rare
     SetFontSize 42
     SetTextColor 255 0 0
