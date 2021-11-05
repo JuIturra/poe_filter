@@ -29,6 +29,118 @@
 ###########################################################################
 
 #------------------------------------
+#   Scourge 3.16.0
+#-----------------------------------
+
+Show # %D5 $type->exotic->scourged $tier->scourgedclasses
+	Scourged True
+	Rarity <= Rare
+	Class "Amulets" "Belt" "Jewel" "Maps" "Rings"
+	SetFontSize 10
+	SetTextColor 0 240 190 255
+	SetBorderColor 0 240 190 255
+	SetBackgroundColor 0 0 0 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 1 Blue Diamond
+
+Show # %D4 $type->exotic->scourged $tier->scourgedrandom
+	Scourged True
+	SetFontSize 10
+	SetBorderColor 0 240 190 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 2 Blue Diamond
+
+Show
+    BaseType "Tainted Blessing" "Tainted Exalted Orb" "Tainted Mythic Orb" "Tainted Orb of Fusing" "Tainted Armourer's Scrap" "Tainted Blacksmith's Whetstone" "Tainted Blessing" "Tainted Chaos Orb" "Tainted Chromatic Orb" "Tainted Jeweller's Orb" 
+	SetFontSize 45
+	SetBorderColor 255 40 40 255
+    SetTextColor 255 40 40 255
+    SetBackgroundColor 128 128 128 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 2 Blue Diamond
+#------------------------------------
+#   Expedition 3.15.0
+#-----------------------------------
+
+Show
+	BaseType "Expedition Logbook"
+	SetFontSize 45
+	SetTextColor 255 85 85 255
+	SetBorderColor 255 85 85 255
+	SetBackgroundColor 40 0 30 255
+	PlayAlertSound 5 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	Class "Expedition Logbook"
+	SetFontSize 45
+	SetTextColor 255 85 85 255
+	SetBorderColor 255 85 85 255
+	SetBackgroundColor 40 0 30 255
+	PlayAlertSound 5 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow UpsideDownHouse
+
+Show
+	Class "Currency"
+	BaseType == "Astragali" "Burial Medallion" "Exotic Coinage" "Scrap Metal"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 240 90 35 255
+	PlayAlertSound 2 300
+	PlayEffect Yellow
+	MinimapIcon 1 Yellow Circle
+
+Show
+	Class "Currency"
+	BaseType == "Grand Black Scythe Artifact" "Grand Broken Circle Artifact" "Grand Order Artifact" "Grand Sun Artifact"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 249 150 25 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+
+Show
+	Class "Currency"
+	BaseType == "Greater Black Scythe Artifact" "Greater Broken Circle Artifact" "Greater Order Artifact" "Greater Sun Artifact"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 213 159 0 255
+	PlayAlertSound 2 300
+	PlayEffect White
+	MinimapIcon 2 White Circle
+
+Show
+	Class "Currency"
+	BaseType == "Common Black Scythe Artifact" "Common Broken Circle Artifact" "Common Order Artifact" "Common Sun Artifact" "Lesser Black Scythe Artifact" "Lesser Broken Circle Artifact" "Lesser Order Artifact" "Lesser Sun Artifact"
+	SetFontSize 45
+	SetTextColor 0 0 0 255
+	SetBorderColor 0 0 0 255
+	SetBackgroundColor 210 178 135 255
+	PlayAlertSound 2 300
+	PlayEffect Grey
+	MinimapIcon 2 Grey Circle
+
+Show
+	Class "Currency"
+	BaseType "Artifact"
+	SetFontSize 45
+	SetTextColor 255 0 255 255
+	SetBorderColor 255 0 255 255
+	SetBackgroundColor 100 0 100 255
+	PlayAlertSound 3 300
+	PlayEffect Pink
+	MinimapIcon 0 Pink Circle
+
+#------------------------------------
 #   Ultimatum 3.14.0
 #-----------------------------------
 Show
@@ -259,6 +371,17 @@ Show
 #   Delirium 3.10.0
 #-----------------------------------
 Show
+	Class "Currency"
+	BaseType "Kalguuran Delirium Orb"
+	SetFontSize 45
+	SetTextColor 255 0 0 255
+	SetBorderColor 255 0 0 255
+	SetBackgroundColor 255 255 255 255
+	PlayAlertSound 6 300
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+Show
     Class Currency
     BaseType "Simulacrum Splinter"
     SetFontSize 45
@@ -272,7 +395,7 @@ Show
 
 Show
    Class Currency
-   BaseType "Abyssal Delirium Orb" "Amorphous Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Cartographer's Delirium Orb" "Decadent Delirium Orb" "Delirium Orb" "Fragmented Delirium Orb" "Imperial Delirium Orb" "Jeweller's Delirium Orb" "Portentous Delirium Orb" "Primal Delirium Orb" "Singular Delirium Orb" "Timeless Delirium Orb" "Whispering Delirium Orb"
+   BaseType "Abyssal Delirium Orb" "Amorphous Delirium Orb" "Armoursmith's Delirium Orb" "Blacksmith's Delirium Orb" "Cartographer's Delirium Orb" "Delirium Orb" "Fragmented Delirium Orb" "Imperial Delirium Orb" "Jeweller's Delirium Orb" "Portentous Delirium Orb" "Primal Delirium Orb" "Singular Delirium Orb" "Timeless Delirium Orb" "Whispering Delirium Orb"
    SetFontSize 45
    SetTextColor 255 0 0 255
    SetBorderColor 255 0 0 255
@@ -660,7 +783,7 @@ Show
     MinimapIcon 2 Red Circle
 
 Show
-    BaseType "Exalted Shard" "Mirror Shard"
+    BaseType "Exalted Shard" "Mirror Shard" "Sacred Orb"
     SetTextColor 255 0 0
     SetBorderColor 255 0 0
     SetBackgroundColor 0 0 0
@@ -670,7 +793,7 @@ Show
     MinimapIcon 2 Red Circle
 
 Show
-    BaseType "Divine Orb"
+    BaseType "Divine Orb" "Tainted Divine Teardrop"
     SetTextColor 255 0 0
     SetBorderColor 255 0 0
     SetBackgroundColor 0 0 0
@@ -737,7 +860,7 @@ Show
     CustomAlertSound "sounds/pop.mp3"
 
 Show
-    BaseType "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Horizons" "Blessed Orb" "Vaal Orb" "Glassblower's Bauble" "Horizon Shard" "Chaos Shard" "Alchemy Shard" "Regal Shard"
+    BaseType "Gemcutter's Prism" "Orb of Fusing" "Orb of Scouring" "Orb of Horizons" "Blessed Orb" "Vaal Orb" "Glassblower's Bauble" "Horizon Shard" "Chaos Shard" "Alchemy Shard" "Regal Shard" "Instilling Orb" "Enkindling Orb"
     SetBorderColor 255 128 0
     SetTextColor 255 128 0
     SetFontSize 43
@@ -844,7 +967,7 @@ Show
 # LOW TIER
 Show
     Class "Map Fragments"
-    BaseType "Rusted Abyss Scarab" "Rusted Blight Scarab" "Rusted Breach Scarab" "Rusted Cartography Scarab" "Rusted Reliquary Scarab" "Rusted Bestiary Scarab" "Rusted Shaper Scarab" "Rusted Elder Scarab" "Rusted Sulphite Scarab" "Rusted Divination Scarab" "Rusted Torment Scarab" "Rusted Ambush Scarab" "Rusted Harbinger Scarab" "Rusted Perandus Scarab"
+    BaseType "Rusted Abyss Scarab" "Rusted Blight Scarab" "Rusted Breach Scarab" "Rusted Cartography Scarab" "Rusted Reliquary Scarab" "Rusted Bestiary Scarab" "Rusted Shaper Scarab" "Rusted Elder Scarab" "Rusted Sulphite Scarab" "Rusted Divination Scarab" "Rusted Torment Scarab" "Rusted Ambush Scarab" "Rusted Harbinger Scarab"
     SetFontSize 43
     SetBackgroundColor 20 160 160
     SetBorderColor 190 190 190
@@ -854,7 +977,7 @@ Show
 # MEDIUM TIER
 Show
     Class "Map Fragments"
-    BaseType "Polished Abyss Scarab" "Polished Blight Scarab" "Polished Breach Scarab" "Polished Cartography Scarab" "Polished Reliquary Scarab" "Polished Bestiary Scarab" "Polished Shaper Scarab" "Polished Elder Scarab" "Polished Sulphite Scarab" "Polished Divination Scarab" "Polished Torment Scarab" "Polished Ambush Scarab" "Polished Harbinger Scarab" "Polished Perandus Scarab"
+    BaseType "Polished Abyss Scarab" "Polished Blight Scarab" "Polished Breach Scarab" "Polished Cartography Scarab" "Polished Reliquary Scarab" "Polished Bestiary Scarab" "Polished Shaper Scarab" "Polished Elder Scarab" "Polished Sulphite Scarab" "Polished Divination Scarab" "Polished Torment Scarab" "Polished Ambush Scarab" "Polished Harbinger Scarab"
     SetFontSize 43
     SetBackgroundColor 20 160 160
     SetBorderColor 240 240 0
@@ -864,7 +987,7 @@ Show
 # HIGH TIER
 Show
     Class "Map Fragments"
-    BaseType "Gilded Abyss Scarab" "Gilded Blight Scarab" "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Reliquary Scarab" "Gilded Bestiary Scarab" "Gilded Shaper Scarab" "Gilded Elder Scarab" "Gilded Sulphite Scarab" "Gilded Divination Scarab" "Gilded Torment Scarab" "Gilded Ambush Scarab" "Gilded Harbinger Scarab" "Gilded Perandus Scarab"
+    BaseType "Gilded Abyss Scarab" "Gilded Blight Scarab" "Gilded Breach Scarab" "Gilded Cartography Scarab" "Gilded Reliquary Scarab" "Gilded Bestiary Scarab" "Gilded Shaper Scarab" "Gilded Elder Scarab" "Gilded Sulphite Scarab" "Gilded Divination Scarab" "Gilded Torment Scarab" "Gilded Ambush Scarab" "Gilded Harbinger Scarab"
     SetFontSize 43
     SetBackgroundColor 20 160 160
     SetBorderColor 240 0 0
@@ -874,7 +997,7 @@ Show
 # MAX TIER
 Show
     Class "Map Fragments"
-    BaseType "Craicic Lure" "Farric Lure" "Fenumal Lure" "Gilded Abyss Scarab" "Gilded Ambush Scarab" "Gilded Blight Scarab" "Gilded Breach Scarab" "Gilded Divination Scarab" "Gilded Harbinger Scarab" "Gilded Legion Scarab" "Gilded Sulphite Scarab" "Saqawine Lure" "Winged Abyss Scarab" "Winged Ambush Scarab" "Winged Blight Scarab" "Winged Breach Scarab" "Winged Cartography Scarab" "Winged Divination Scarab" "Winged Elder Scarab" "Winged Harbinger Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab" "Winged Perandus Scarab" "Winged Reliquary Scarab" "Winged Sulphite Scarab"
+    BaseType "Craicic Lure" "Farric Lure" "Fenumal Lure" "Gilded Abyss Scarab" "Gilded Ambush Scarab" "Gilded Blight Scarab" "Gilded Breach Scarab" "Gilded Divination Scarab" "Gilded Harbinger Scarab" "Gilded Legion Scarab" "Gilded Sulphite Scarab" "Saqawine Lure" "Winged Abyss Scarab" "Winged Ambush Scarab" "Winged Blight Scarab" "Winged Breach Scarab" "Winged Cartography Scarab" "Winged Divination Scarab" "Winged Elder Scarab" "Winged Harbinger Scarab" "Winged Legion Scarab" "Winged Metamorph Scarab" "Winged Reliquary Scarab" "Winged Sulphite Scarab"
     SetFontSize 45
     SetTextColor 255 255 255 255
     SetBorderColor 255 255 255 255
@@ -1181,7 +1304,7 @@ Show
 #
 ###########################################################################
 Show
-    BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Two-Toned Boots" "Seaglass Amulet" "Blessed Boots" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring" "Convoking Wand"
+    BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Two-Toned Boots" "Seaglass Amulet" "Apothecary's Gloves" "Artillery Quiver" "Iolite Ring" "Convoking Wand"
     Rarity = Rare
     SetFontSize 42
     SetTextColor 255 0 0
@@ -1266,12 +1389,6 @@ Show
 
 # Items Raros
 Show
-    Class "Wand"
-    Rarity Rare
-    SetBorderColor 64 64 255
-    SetTextColor 250 250 0
-
-Show
     Rarity Rare
     SetBorderColor 255 255 255
     SetTextColor 250 250 0
@@ -1286,6 +1403,17 @@ Show
 #   Leveo
 #
 ###########################################################################
+
+Show
+    BaseType "Amethyst Flask"
+    SetFontSize 45
+    SetTextColor 255 255 255 255
+    SetBorderColor 255 255 255 255
+    SetBackgroundColor 159 15 213 255
+    PlayAlertSound 1 300
+    PlayEffect Red
+    MinimapIcon 0 Red Hexagon
+
 #Show
 #   Class Flask
 
